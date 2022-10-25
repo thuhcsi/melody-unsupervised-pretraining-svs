@@ -66,7 +66,7 @@ We further conduct an ablation study to validate different contributions in our 
 
 
 * * *
--->
+
 
 # Case Study
 We select a segment from the test set with dramatic energy changes and plot the spectrogram of the synthesized singing voice and corresponding ground truth to demonstrate the improvement in energy and pitch modeling. The first to third rows correspond to **Proposed**, **VISinger** and **Ground truth** respectively. The **blue line** in the spectrogram represents the **energy** while the **yellow line** represents the **pitch**. 
@@ -82,4 +82,4 @@ The result of the case study demonstrates the improvement of our proposed method
 | Proposed | 热恋的时刻最任性 | <audio controls><source src="./wavs/casestudy/proposed.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/proposed.png" width="75%"> |
 | VISinger | 热恋的时刻最任性 | <audio controls><source src="./wavs/casestudy/visinger.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/visinger.png" width="75%"> |
 | Ground-truth | 热恋的时刻最任性 | <audio controls><source src="./wavs/casestudy/gt.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/gt.png" width="75%"> | 
- -->
+ --> 
