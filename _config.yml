@@ -1,6 +1,6 @@
 remote_theme: thuhcsi/slate
-title: Towards Improving the Expressiveness of Singing Voice Synthesis with BERT Derived Semantic Information
-description: submitted to INTERSPEECH 2022.
+title: ENHANCING THE VOCAL RANGE OF SINGLE-SPEAKER SINGING VOICE SYNTHESIS WITH MELODY-UNSUPERVISED PRE-TRAINING
+description: submitted to ICASSP 2023.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman
