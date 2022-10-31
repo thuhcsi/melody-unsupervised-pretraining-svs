@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-<!-- # Abstract
+# Abstract
 
-  This paper presents an end-to-end high-quality singing voice synthesis (SVS) system that uses bidirectional encoder representation from Transformers (BERT) derived semantic embeddings to improve the expressiveness of the synthesized singing voice.Based on the main architecture of recently proposed VISinger, we put forward several specific designs for expressive singing voice synthesis.First, different from the previous SVS models, we use text representation of lyrics extracted from pre-trained BERT as additional input to the model. The representation contains information about semantics of the lyrics, which could help SVS system produce more expressive and natural voice. Second, we further introduce an energy predictor to stabilize the synthesized voice and model the wider range of energy variations that also contribute to the expressiveness of singing voice. Last but not the least, to attenuate the off-key issues, the pitch predictor is re-designed to predict the real to note pitch ratio. Both objective and subjective experimental results prove that the proposed SVS system can produce singing voice with higher-quality outperforming VISinger. -->
-<!-- <center>
+  The single-speaker singing voice synthesis (SVS) usually underperforms at pitch values that are out of the singer's vocal range or associated with limited training samples. Based on our previous work, this work proposes a melody-unsupervised multi-speaker pre-training method conducted on a multi-singer dataset to enhance the vocal range of the single-speaker, while not degrading the timbre similarity. This pre-training method can be deployed to a large-scale multi-singer dataset, which only contains audio-and-lyrics pairs without phonemic timing information and pitch annotation. Specifically, in the pre-training step, we design a phoneme predictor to produce the frame-level phoneme probability vectors as the phonemic timing information and a speaker encoder to model the timbre variations of different singers, and directly estimate the frame-level f0 values from the audio to provide the pitch information. These pre-trained model parameters are delivered into the fine-tuning step as prior knowledge to enhance the single speaker's vocal range. Moreover, this work also contributes to improving the sound quality and rhythm naturalness of the synthesized singing voices. It is the first to introduce a differentiable duration regulator to improve the rhythm naturalness of the synthesized voice, and a bi-directional flow model to improve the sound quality. Experimental results verify that the proposed SVS system outperforms the baseline on both sound quality and naturalness. 
+<center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="./imgs/model.jpg"  width="50%" height="50%">
@@ -15,7 +15,7 @@ layout: default
     padding: 2px;"> Fig.1: The structure of the proposed model. </div>
 </center>
 
-# Subjective Evaluation 
+<!-- # Subjective Evaluation 
 To demonstrate that our proposed model can significantly improve the naturalness and expressiveness of the synthesized singing voice, some samples are provided for comparison. **GT** means ground truth. **VISinger** represents the baseline model we are comparing, and **Proposed** means the proposed model with semantic extraction module、energy predictor and pitch predictor, which are described in detail in the paper. 
 
 | Target Chinese Text | GT | VISinger | Proposed |
