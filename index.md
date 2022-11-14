@@ -16,7 +16,7 @@ layout: default
 </center>
 
 # Subjective Evaluation 
-<!-- To demonstrate that our proposed model can significantly improve the naturalness and expressiveness of the synthesized singing voice, some samples are provided for comparison. **GT** means ground truth. **VISinger** represents the baseline model we are comparing, and **Proposed** means the proposed model with semantic extraction module、energy predictor and pitch predictor, which are described in detail in the paper.  -->
+To demonstrate that our proposed model can significantly improve the naturalness and quality of the synthesized singing voice, some samples are provided for comparison. **GT** means ground truth. **Baseline** represents the baseline model we are comparing, and **Proposed** means the proposed model with pretrain strategy、learnable upsampling layer and bi-directional flow model, which are described in detail in the paper.  
 
 | Target Chinese Text | GT | Baseline | Proposed |
 | :----:| :----:| :----:| :----:| :----:|
@@ -36,7 +36,7 @@ layout: default
 
 
 # Ablation Study 
-<!-- We further conduct an ablation study to validate different contributions in our proposed method.  We remove energy predictor, semantic extraction module respectively and design a semantic extraction module with different structure named reversed semantic extraction module, abbreviated as reversed SEM, to replace the semantic extraction module. The audio samples are present below. -->
+We further conduct an ablation study to validate different contributions in our proposed method.  We remove pretrain-strategy, bi-directional flow model, and learnable upsampling layer respectively. The audio samples are present below. 
 
 | Target Chinese Text |  GT | Proposed | without pretrain | without bi-flow |
 | :----:| :----:| :----:| :----:|:----:|:----:|
@@ -77,6 +77,9 @@ In the red box circled in the upper-left corner, the pitch of our proposed metho
 Furthermore, with the help of the energy predictor, the synthesized singing voice of the proposed method and ground-truth recording both have a slight fade at the end of the long tones, while that of VISinger does not.
 
 The result of the case study demonstrates the improvement of our proposed method in synthesizing expressive singing voice. -->
+
+To demonstrate the impact of the aforementioned contributions, a case study is conducted to synthesize a testing sample that contains pitch values of limited training data. We compare the ground-truth, the proposed method and the baseline.
+The pitch is marked with blue lines and the pitch value at the red line is shown on the right. This sample ends with a slightly low pitch that is associated with few training data. It is observed that the proposed method synthesizes this pitch accurately, but the baseline method tends to incorrectly use a higher pitch to replace this one, proving that the proposed pre-training strategy is effective in enhancing the vocal range.
 
 | Model | Target Chinese Text | Audio | Visualizations of spectrograms |
 | :----: | :----:| :----:| :---: |
