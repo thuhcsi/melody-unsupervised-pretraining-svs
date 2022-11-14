@@ -81,6 +81,6 @@ The result of the case study demonstrates the improvement of our proposed method
 | Model | Target Chinese Text | Audio | Visualizations of spectrograms |
 | :----: | :----:| :----:| :---: |
 | Proposed | 我还在寻找一个依靠 | <audio controls><source src="./wavs/casestudy/proposed.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/proposed.png" width="75%"> |
-| VISinger | 我还在寻找一个依靠 | <audio controls><source src="./wavs/casestudy/baseline.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/baseline.png" width="75%"> |
+| Baseline | 我还在寻找一个依靠 | <audio controls><source src="./wavs/casestudy/baseline.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/baseline.png" width="75%"> |
 | Ground-truth | 我还在寻找一个依靠 | <audio controls><source src="./wavs/casestudy/gt.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <img src="./wavs/casestudy/gt.png" width="75%"> | 
 
