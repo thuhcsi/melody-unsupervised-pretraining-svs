@@ -16,7 +16,7 @@ layout: default
 </center>
 
 # Subjective Evaluation 
-To demonstrate that our proposed model can significantly improve the naturalness and expressiveness of the synthesized singing voice, some samples are provided for comparison. **GT** means ground truth. **VISinger** represents the baseline model we are comparing, and **Proposed** means the proposed model with semantic extraction module、energy predictor and pitch predictor, which are described in detail in the paper. 
+<!-- To demonstrate that our proposed model can significantly improve the naturalness and expressiveness of the synthesized singing voice, some samples are provided for comparison. **GT** means ground truth. **VISinger** represents the baseline model we are comparing, and **Proposed** means the proposed model with semantic extraction module、energy predictor and pitch predictor, which are described in detail in the paper.  -->
 
 | Target Chinese Text | GT | Baseline | Proposed |
 | :----:| :----:| :----:| :----:| :----:|
@@ -36,7 +36,7 @@ To demonstrate that our proposed model can significantly improve the naturalness
 
 
 # Ablation Study 
-We further conduct an ablation study to validate different contributions in our proposed method.  We remove energy predictor, semantic extraction module respectively and design a semantic extraction module with different structure named reversed semantic extraction module, abbreviated as reversed SEM, to replace the semantic extraction module. The audio samples are present below.
+<!-- We further conduct an ablation study to validate different contributions in our proposed method.  We remove energy predictor, semantic extraction module respectively and design a semantic extraction module with different structure named reversed semantic extraction module, abbreviated as reversed SEM, to replace the semantic extraction module. The audio samples are present below. -->
 
 | Target Chinese Text |  GT | Proposed | without pretrain | without bi-flow |
 | :----:| :----:| :----:| :----:|:----:|:----:|
@@ -70,13 +70,13 @@ We further conduct an ablation study to validate different contributions in our 
 
 
 # Case Study
-We select a segment from the test set with dramatic energy changes and plot the spectrogram of the synthesized singing voice and corresponding ground truth to demonstrate the improvement in energy and pitch modeling. The first to third rows correspond to **Proposed**, **VISinger** and **Ground truth** respectively. The **blue line** in the spectrogram represents the **energy** while the **yellow line** represents the **pitch**. 
+<!-- We select a segment from the test set with dramatic energy changes and plot the spectrogram of the synthesized singing voice and corresponding ground truth to demonstrate the improvement in energy and pitch modeling. The first to third rows correspond to **Proposed**, **VISinger** and **Ground truth** respectively. The **blue line** in the spectrogram represents the **energy** while the **yellow line** represents the **pitch**. 
 
 In the long tones circled in the middle red box, the singing voice synthesized by the proposed method has a flat pitch, while the singing voice synthesized by the VISinger has irregular fluctuations, making it sound incoherent. This can be attributed to our re-designed pitch predictor, which makes our model predict pitch more accurately. 
 In the red box circled in the upper-left corner, the pitch of our proposed method changes more similar to that of the ground-truth, with a more pronounced pitch dip before the sudden pitch change, followed by a sliding rise to the highest pitch. It can be seen that our proposed method can synthesize singing voice with a more natural pitch compared to VISinger. 
 Furthermore, with the help of the energy predictor, the synthesized singing voice of the proposed method and ground-truth recording both have a slight fade at the end of the long tones, while that of VISinger does not.
 
-The result of the case study demonstrates the improvement of our proposed method in synthesizing expressive singing voice.
+The result of the case study demonstrates the improvement of our proposed method in synthesizing expressive singing voice. -->
 
 | Model | Target Chinese Text | Audio | Visualizations of spectrograms |
 | :----: | :----:| :----:| :---: |
