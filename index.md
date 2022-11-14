@@ -18,7 +18,7 @@ layout: default
 # Subjective Evaluation 
 To demonstrate that our proposed model can significantly improve the naturalness and expressiveness of the synthesized singing voice, some samples are provided for comparison. **GT** means ground truth. **VISinger** represents the baseline model we are comparing, and **Proposed** means the proposed model with semantic extraction module、energy predictor and pitch predictor, which are described in detail in the paper. 
 
-| Target Chinese Text | GT | VISinger | Proposed |
+| Target Chinese Text | GT | Baseline | Proposed |
 | :----:| :----:| :----:| :----:| :----:|
 | 你说我不该不该不该在这时候 | <audio controls><source src="./wavs/gt/1.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/baseline/1.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/proposed/1.wav" type="audio/wav">Your browser does not support the audio element.</audio> |
 | 昂首到达每一个地方这世界的太阳 | <audio controls><source src="./wavs/gt/2.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/baseline/2.wav" type="audio/wav">Your browser does not support the audio element.</audio> | <audio controls><source src="./wavs/proposed/2.wav" type="audio/wav">Your browser does not support the audio element.</audio> |
